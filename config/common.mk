@@ -330,6 +330,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 -include vendor/cm-priv/keys/keys.mk
 
+# easy way to extend to add more packages
+-include vendor/extra/product.mk
+
 CM_DISPLAY_VERSION := $(CM_VERSION)
 
 ifneq ($(PRODUCT_DEFAULT_DEV_CERTIFICATE),)
